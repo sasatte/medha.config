@@ -8,7 +8,7 @@
       "version": "4.0",
       "type": "vad",
       "format": "onnx",
-      "url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/silero.onnx",
+      "url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/vad/silero-vad-v4/silero.onnx",
       "sha256": "",
       "size_bytes": 1800000,
       "description": "High-quality Voice Activity Detection model from Silero",
@@ -30,7 +30,7 @@
       "version": "3.0",
       "type": "smart_turn",
       "format": "onnx",
-      "url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/smart-turn-v3.0.onnx",
+      "url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/turn-detection/smart-turn-v3/smart-turn-v3.onnx",
       "sha256": "",
       "size_bytes": 3500000,
       "description": "Turn-taking detection model for conversational AI",
@@ -52,7 +52,7 @@
       "version": "1.0",
       "type": "speaker_verification",
       "format": "onnx",
-      "url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/camplus.onnx",
+      "url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/speaker-verification/camplus/camplus.onnx",
       "sha256": "",
       "size_bytes": 23000000,
       "description": "CAM++ model for speaker verification and identification",
@@ -70,22 +70,26 @@
     },
     {
       "id": "whisper-tiny-en",
-      "name": "Whisper Tiny English",
+      "name": "Whisper Tiny English (Sherpa-ONNX)",
       "version": "1.0",
       "type": "asr",
       "format": "onnx",
-      "url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/whisper-tiny-en.onnx",
+      "url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/asr/whisper-tiny-en/encoder.onnx",
       "sha256": "",
-      "size_bytes": 75000000,
-      "description": "OpenAI Whisper Tiny model for English ASR",
-      "tags": ["asr", "whisper", "english", "speech-to-text"],
+      "size_bytes": 40000000,
+      "description": "Sherpa-ONNX optimized Whisper Tiny English (INT8 quantized)",
+      "tags": ["asr", "whisper", "english", "speech-to-text", "sherpa-onnx", "int8"],
       "metadata": {
         "sample_rate": "16000",
         "language": "en",
-        "model_size": "tiny"
+        "model_size": "tiny",
+        "quantization": "int8",
+        "encoder_url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/asr/whisper-tiny-en/encoder.onnx",
+        "decoder_url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/asr/whisper-tiny-en/decoder.onnx",
+        "tokens_url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/asr/whisper-tiny-en/tokens.txt"
       },
       "requirements": {
-        "min_memory_mb": 400,
+        "min_memory_mb": 200,
         "requires_gpu": false,
         "dependencies": []
       }
@@ -96,7 +100,7 @@
       "version": "1.0",
       "type": "asr",
       "format": "onnx",
-      "url": "https://github.com/sasatte/medha.config/raw/refs/heads/main/models/whisper-base-multilingual.onnx",
+      "url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/asr/whisper-base-multilingual/encoder.onnx",
       "sha256": "",
       "size_bytes": 145000000,
       "description": "OpenAI Whisper Base model for multilingual ASR",
@@ -118,7 +122,7 @@
       "version": "1.0",
       "type": "vad",
       "format": "onnx",
-      "url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/marblenet.onnx",
+      "url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/vad/marblenet/marblenet.onnx",
       "sha256": "",
       "size_bytes": 900000,
       "description": "NVIDIA MarbleNet Voice Activity Detection model",
@@ -140,7 +144,7 @@
       "version": "1.0",
       "type": "vad",
       "format": "onnx",
-      "url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/funasr.onnx",
+      "url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/vad/funasr/funasr.onnx",
       "sha256": "",
       "size_bytes": 350000,
       "description": "Alibaba FunASR VAD model optimized for Chinese and English",
@@ -158,4 +162,3 @@
     }
   ]
 }
-
