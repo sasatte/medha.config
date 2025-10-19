@@ -1,0 +1,162 @@
+{
+  "version": "1.0",
+  "description": "Medha AI Model Catalog",
+  "models": [
+    {
+      "id": "silero-vad-v4",
+      "name": "Silero VAD v4",
+      "version": "4.0",
+      "type": "vad",
+      "format": "onnx",
+      "url": "https://github.com/snakers4/silero-vad/raw/master/files/silero_vad.onnx",
+      "sha256": "",
+      "size_bytes": 1800000,
+      "description": "High-quality Voice Activity Detection model from Silero",
+      "tags": ["vad", "speech-detection", "real-time"],
+      "metadata": {
+        "sample_rate": "16000",
+        "input_format": "float32",
+        "window_size_ms": "30"
+      },
+      "requirements": {
+        "min_memory_mb": 50,
+        "requires_gpu": false,
+        "dependencies": []
+      }
+    },
+    {
+      "id": "smart-turn-v3",
+      "name": "SmartTurn v3.0",
+      "version": "3.0",
+      "type": "smart_turn",
+      "format": "onnx",
+      "url": "https://huggingface.co/pipecat-ai/smart-turn-v3/resolve/main/smart-turn-v3.0.onnx",
+      "sha256": "",
+      "size_bytes": 3500000,
+      "description": "Turn-taking detection model for conversational AI",
+      "tags": ["turn-taking", "conversation", "real-time"],
+      "metadata": {
+        "sample_rate": "16000",
+        "window_duration_sec": "8.2",
+        "frame_shift_sec": "0.05"
+      },
+      "requirements": {
+        "min_memory_mb": 100,
+        "requires_gpu": false,
+        "dependencies": []
+      }
+    },
+    {
+      "id": "titanet-large",
+      "name": "TitaNet Large Speaker Verification",
+      "version": "1.0",
+      "type": "speaker_verification",
+      "format": "onnx",
+      "url": "https://huggingface.co/nvidia/speakerverification_en_titanet_large/resolve/main/titanet_large.onnx",
+      "sha256": "",
+      "size_bytes": 23000000,
+      "description": "NVIDIA TitaNet Large model for speaker verification and identification",
+      "tags": ["speaker-verification", "speaker-embedding", "nvidia"],
+      "metadata": {
+        "sample_rate": "16000",
+        "embedding_size": "192",
+        "input_duration_sec": "variable"
+      },
+      "requirements": {
+        "min_memory_mb": 200,
+        "requires_gpu": false,
+        "dependencies": []
+      }
+    },
+    {
+      "id": "whisper-tiny-en",
+      "name": "Whisper Tiny English",
+      "version": "1.0",
+      "type": "asr",
+      "format": "onnx",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/main/model.onnx",
+      "sha256": "",
+      "size_bytes": 75000000,
+      "description": "OpenAI Whisper Tiny model for English ASR",
+      "tags": ["asr", "whisper", "english", "speech-to-text"],
+      "metadata": {
+        "sample_rate": "16000",
+        "language": "en",
+        "model_size": "tiny"
+      },
+      "requirements": {
+        "min_memory_mb": 400,
+        "requires_gpu": false,
+        "dependencies": []
+      }
+    },
+    {
+      "id": "whisper-base-multilingual",
+      "name": "Whisper Base Multilingual",
+      "version": "1.0",
+      "type": "asr",
+      "format": "onnx",
+      "url": "https://huggingface.co/openai/whisper-base/resolve/main/model.onnx",
+      "sha256": "",
+      "size_bytes": 145000000,
+      "description": "OpenAI Whisper Base model for multilingual ASR",
+      "tags": ["asr", "whisper", "multilingual", "speech-to-text"],
+      "metadata": {
+        "sample_rate": "16000",
+        "languages": "99",
+        "model_size": "base"
+      },
+      "requirements": {
+        "min_memory_mb": 800,
+        "requires_gpu": false,
+        "dependencies": []
+      }
+    },
+    {
+      "id": "marblenet-vad",
+      "name": "MarbleNet VAD",
+      "version": "1.0",
+      "type": "vad",
+      "format": "onnx",
+      "url": "https://huggingface.co/nvidia/vad_marblenet/resolve/main/marblenet.onnx",
+      "sha256": "",
+      "size_bytes": 900000,
+      "description": "NVIDIA MarbleNet Voice Activity Detection model",
+      "tags": ["vad", "nvidia", "real-time"],
+      "metadata": {
+        "sample_rate": "16000",
+        "frame_length_ms": "80",
+        "frame_shift_ms": "10"
+      },
+      "requirements": {
+        "min_memory_mb": 50,
+        "requires_gpu": false,
+        "dependencies": []
+      }
+    },
+    {
+      "id": "funasr-vad",
+      "name": "FunASR VAD",
+      "version": "1.0",
+      "type": "vad",
+      "format": "onnx",
+      "url": "https://huggingface.co/alibaba-damo/speech_fsmn_vad_zh-cn-16k-common-onnx/resolve/main/model.onnx",
+      "sha256": "",
+      "size_bytes": 350000,
+      "description": "Alibaba FunASR VAD model optimized for Chinese and English",
+      "tags": ["vad", "chinese", "english", "alibaba"],
+      "metadata": {
+        "sample_rate": "16000",
+        "languages": "zh,en",
+        "chunk_size_ms": "200"
+      },
+      "requirements": {
+        "min_memory_mb": 30,
+        "requires_gpu": false,
+        "dependencies": []
+      }
+    }
+  ]
+}
+
+

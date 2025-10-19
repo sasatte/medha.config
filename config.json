@@ -1,0 +1,50 @@
+{
+  "app": {
+    "appId": "1",
+    "clientId": "client456",
+    "projectId": "project123",
+    "userId": "USER_ID",
+    "sessionId": "SESSION_ID"
+  },
+  "network": {
+    "serverHost": "172.210.232.33",
+    "serverPort": 50052,
+    "reconnectInterval": 5,
+    "websocket": {
+      "enabled": true,
+      "port": 8080
+    },
+    "ping": {
+      "enabled": false,
+      "interval": 5000
+    }
+  },
+  "audio": {
+    "samplingRate": 16000,
+    "framesPerBuffer": 800,
+    "audioBufferSize": 800,
+    "chunkSize": 400,
+    "input": {
+      "enabled": true,
+      "deviceIndex": -1,
+      "deviceName": "",
+      "volume": 1.0,
+      "encoding": "flac",
+      "previousChunks": 10,
+      "silentCount": 20
+    },
+    "output": {
+      "enabled": true,
+      "deviceIndex": -1,
+      "deviceName": "",
+      "volume": 1.0,
+      "encoding": "pcm",
+      "playbackSpeed": 1.0
+    },
+    "speakerVerification": {
+      "enabled": false,
+      "threshold": 0.6
+    }
+  }
+}
+
