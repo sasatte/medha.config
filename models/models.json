@@ -74,7 +74,7 @@
       "version": "1.0",
       "type": "asr",
       "format": "onnx",
-      "url": "https://github.com/sasatte/medha.config/raw/refs/heads/main/models/whisper-tiny-en.onnx",
+      "url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/whisper-tiny-en.onnx",
       "sha256": "",
       "size_bytes": 75000000,
       "description": "OpenAI Whisper Tiny model for English ASR",
