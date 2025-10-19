@@ -1,4 +1,4 @@
-{
+0;10;1c{
   "app": {
     "appId": "1",
     "clientId": "client456",
@@ -50,7 +50,7 @@
     "modelsDirectory": "",
     "cacheDirectory": "",
     "autoDownload": true,
-    "catalogUrl": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models.json",
+    "catalogUrl": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/models.json",
     "vad": {
       "enabled": true,
       "selectedModel": "silero-vad-v4",
