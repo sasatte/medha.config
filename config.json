@@ -58,6 +58,7 @@
       "minSpeechDurationMs": 250,
       "minSilenceDurationMs": 500
     },
+
     "smartTurn": {
       "enabled": true,
       "selectedModel": "smart-turn-v3",
@@ -71,7 +72,7 @@
       "threshold": 0.7
     },
     "asr": {
-      "enabled": false,
+      "enabled": true,
       "selectedModel": "whisper-tiny-en",
       "language": "en",
       "beamSize": 5,
