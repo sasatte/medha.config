@@ -78,12 +78,13 @@
       "beamSize": 5,
       "temperature": 0.0
     },
-    "tts": {
-      "enabled": false,
-      "selectedModel": "",
-      "voice": "default",
-      "speakingRate": 1.0,
-      "volumeGainDb": 0.0
+      "tts": {
+	        "enabled": true,
+      "provider": "local",
+      "selectedModel": "kokoro-multi-lang-v1_1",
+      "speakerId": 0,
+      "speed": 1.0,
+      "volume": 1.0
     },
     "llm": {
       "enabled": false,
