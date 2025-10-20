@@ -2,3 +2,5 @@ models/tts/*.tar.bz2 filter=lfs diff=lfs merge=lfs -text
 *.tar.bz2 filter=lfs diff=lfs merge=lfs -text
 *.onnx filter=lfs diff=lfs merge=lfs -text
 *.bin filter=lfs diff=lfs merge=lfs -text
+models/asr/whisper-turbo.tar.gz filter=lfs diff=lfs merge=lfs -text
+models/asr/*.tar.gz filter=lfs diff=lfs merge=lfs -text

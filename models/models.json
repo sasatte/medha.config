@@ -95,6 +95,32 @@
       }
     },
     {
+      "id": "whisper-turbo",
+      "name": "Whisper Turbo English (Sherpa-ONNX)",
+      "version": "1.0",
+      "type": "asr",
+      "format": "archive",
+      "archive_type": "tar.gz",
+      "extract_to_subdir": true,
+      "url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/asr/whisper-turbo.tar.gz",
+      "sha256": "",
+      "size_bytes": 40000000,
+      "description": "Sherpa-ONNX optimized Whisper Turbo English (INT8 quantized)",
+      "tags": ["asr", "whisper", "english", "speech-to-text", "sherpa-onnx", "int8"],
+      "metadata": {
+        "sample_rate": "16000",
+        "language": "en",
+        "model_size": "turbo",
+        "quantization": "int8",
+        "files": ["encoder.onnx", "decoder.onnx", "tokens.txt"]
+      },
+      "requirements": {
+        "min_memory_mb": 200,
+        "requires_gpu": false,
+        "dependencies": []
+      }
+    },
+    {
       "id": "whisper-base-multilingual",
       "name": "Whisper Base Multilingual",
       "version": "1.0",
