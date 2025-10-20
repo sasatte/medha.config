@@ -8,7 +8,7 @@
       "version": "4.0",
       "type": "vad",
       "format": "onnx",
-      "url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/vad/silero-vad-v4/silero.onnx",
+	"url": "https://github.com/sasatte/medha.config/raw/refs/heads/main/models/vad/silero-vad-v4/silero.onnx",
       "sha256": "",
       "size_bytes": 1800000,
       "description": "High-quality Voice Activity Detection model from Silero",
