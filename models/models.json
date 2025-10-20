@@ -159,6 +159,82 @@
         "requires_gpu": false,
         "dependencies": []
       }
+    },
+    {
+      "id": "kokoro-multi-lang-v1_1",
+      "name": "Kokoro TTS Multi-Language v1.1",
+      "version": "1.1",
+      "type": "tts",
+      "format": "onnx",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-multi-lang-v1_1.tar.bz2",
+      "sha256": "",
+      "size_bytes": 250000000,
+      "description": "Kokoro multi-language TTS model supporting English and Chinese with 103 speakers",
+      "tags": ["tts", "kokoro", "multilingual", "english", "chinese", "sherpa-onnx"],
+      "metadata": {
+        "sample_rate": "24000",
+        "languages": "en,zh",
+        "num_speakers": "103",
+        "speaker_range": "0-102",
+        "model_type": "kokoro",
+        "files": ["model.onnx", "voices.bin", "tokens.txt", "espeak-ng-data", "dict", "lexicon-us-en.txt", "lexicon-zh.txt"]
+      },
+      "requirements": {
+        "min_memory_mb": 500,
+        "requires_gpu": false,
+        "dependencies": ["sherpa-onnx"]
+      }
+    },
+    {
+      "id": "kokoro-multi-lang-v1_0",
+      "name": "Kokoro TTS Multi-Language v1.0",
+      "version": "1.0",
+      "type": "tts",
+      "format": "onnx",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-multi-lang-v1_0.tar.bz2",
+      "sha256": "",
+      "size_bytes": 200000000,
+      "description": "Kokoro multi-language TTS model supporting English and Chinese with 53 speakers",
+      "tags": ["tts", "kokoro", "multilingual", "english", "chinese", "sherpa-onnx"],
+      "metadata": {
+        "sample_rate": "24000",
+        "languages": "en,zh",
+        "num_speakers": "53",
+        "speaker_range": "0-52",
+        "model_type": "kokoro",
+        "files": ["model.onnx", "voices.bin", "tokens.txt", "espeak-ng-data", "dict", "lexicon-us-en.txt", "lexicon-zh.txt"]
+      },
+      "requirements": {
+        "min_memory_mb": 400,
+        "requires_gpu": false,
+        "dependencies": ["sherpa-onnx"]
+      }
+    },
+    {
+      "id": "kokoro-en-v1_0",
+      "name": "Kokoro TTS English v1.0",
+      "version": "1.0",
+      "type": "tts",
+      "format": "onnx",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-en-v1_0.tar.bz2",
+      "sha256": "",
+      "size_bytes": 150000000,
+      "description": "Kokoro English-only TTS model with 11 speakers",
+      "tags": ["tts", "kokoro", "english", "sherpa-onnx"],
+      "metadata": {
+        "sample_rate": "24000",
+        "languages": "en",
+        "num_speakers": "11",
+        "speaker_range": "0-10",
+        "model_type": "kokoro",
+        "files": ["model.onnx", "voices.bin", "tokens.txt", "espeak-ng-data", "dict", "lexicon-us-en.txt"]
+      },
+      "requirements": {
+        "min_memory_mb": 300,
+        "requires_gpu": false,
+        "dependencies": ["sherpa-onnx"]
+      }
     }
   ]
 }
+
