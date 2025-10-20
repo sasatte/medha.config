@@ -72,7 +72,8 @@
       "threshold": 0.7
     },
     "asr": {
-      "enabled": true,
+	"enabled": true,
+	"provider" : "local",
       "selectedModel": "whisper-tiny-en",
       "language": "en",
       "beamSize": 5,
