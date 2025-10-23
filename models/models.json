@@ -266,6 +266,31 @@
         "requires_gpu": false,
         "dependencies": ["sherpa-onnx"]
       }
+    },  {
+      "id": "qwen2.5-3b-instruct",
+      "name": "Qwen2.5 3B Instruct",
+      "version": "2.5",
+      "type": "llm",
+      "format": "gguf",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/main/qwen2.5-3b-instruct-q4_k_m.gguf",
+      "sha256": "",
+      "size_bytes": 2100000000,
+      "description": "Qwen2.5 3B instruction-tuned model with Q4_K_M quantization. Excellent at coding, math, and long-form generation.",
+      "tags": ["llm", "qwen", "instruct", "llama.cpp", "gguf", "multilingual"],
+      "metadata": {
+        "context_length": "32768",
+        "quantization": "q4_k_m",
+        "parameters": "3B",
+        "framework": "llama.cpp",
+        "temperature": "0.7",
+        "top_p": "0.8",
+        "top_k": "20"
+      },
+      "requirements": {
+        "min_memory_mb": 4096,
+        "requires_gpu": false,
+        "dependencies": ["llama.cpp"]
+      }
     }
   ]
 }
