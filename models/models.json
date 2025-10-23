@@ -30,7 +30,7 @@
       "version": "3.0",
       "type": "smart_turn",
       "format": "onnx",
-      "url": "https://raw.githubusercontent.com/sasatte/medha.config/refs/heads/main/models/turn-detection/smart-turn-v3/smart-turn-v3.onnx",
+	"url": "https://media.githubusercontent.com/media/sasatte/medha.config/refs/heads/main/models/turn-detection/smart-turn-v3/smart-turn-v3.onnx",
       "sha256": "",
       "size_bytes": 3500000,
       "description": "Turn-taking detection model for conversational AI",
